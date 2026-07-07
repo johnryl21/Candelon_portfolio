@@ -27,40 +27,40 @@
 
     <!--================ NAVBAR ================-->
 
-<header>
+    <header>
 
-    <a href="#" class="logo">John<span>Ryl.</span></a>
+        <a href="#" class="logo">John<span>Ryl.</span></a>
 
-    <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#services">Services</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#services">Services</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <i class='bx bx-menu' id="menu"></i>
+        <i class='bx bx-menu' id="menu"></i>
 
-</header>
+    </header>
 
-<script>
-const menu = document.querySelector("#menu");
-const navbar = document.querySelector(".navbar");
+    <script>
+        const menu = document.querySelector("#menu");
+        const navbar = document.querySelector(".navbar");
 
-menu.onclick = () => {
-    menu.classList.toggle("bx-x");
-    navbar.classList.toggle("active");
-}
+        menu.onclick = () => {
+            menu.classList.toggle("bx-x");
+            navbar.classList.toggle("active");
+        }
 
-document.querySelectorAll(".navbar a").forEach(link=>{
-    link.onclick=()=>{
-        menu.classList.remove("bx-x");
-        navbar.classList.remove("active");
-    }
-});
-</script>
+        document.querySelectorAll(".navbar a").forEach(link => {
+            link.onclick = () => {
+                menu.classList.remove("bx-x");
+                navbar.classList.remove("active");
+            }
+        });
+    </script>
 
     <!--================ HERO =================-->
 
@@ -86,8 +86,8 @@ document.querySelectorAll(".navbar a").forEach(link=>{
             <div class="hero-buttons">
 
                 <a href="resume/Candelon, John Ryl - Resume.pdf" download class="btn">
-    Download Resume
-</a>
+                    Download Resume
+                </a>
 
                 <a href="#contact" class="btn2">Hire Me</a>
 
@@ -95,28 +95,27 @@ document.querySelectorAll(".navbar a").forEach(link=>{
 
             <div class="socials">
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/lyrnhoj.nolednac.9" target="_blank">
-        <i class='bx bxl-facebook'></i>
-    </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/lyrnhoj.nolednac.9" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
 
-    <!-- Gmail -->
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnrylcandelon02@gmail.com" target="_blank">
-        <i class='bx bx-envelope'></i>
-    </a>
+                <!-- Gmail -->
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnrylcandelon02@gmail.com" target="_blank">
+                    <i class='bx bx-envelope'></i>
+                </a>
 
-    <!-- Telegram -->
-    <a href="https://t.me/Johnryl22" target="_blank">
-    <i class='bx bxl-telegram'></i>
-</a>
+                <!-- Telegram -->
+                <a href="https://t.me/Johnryl22" target="_blank">
+                    <i class='bx bxl-telegram'></i>
+                </a>
 
-    <!-- WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=639932403603"
-   target="_blank">
-    <i class='bx bxl-whatsapp'></i>
-</a>
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=639932403603" target="_blank">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
 
-</div>
+            </div>
 
         </div>
 
@@ -396,117 +395,114 @@ document.querySelectorAll(".navbar a").forEach(link=>{
 
     <!--================ CERTIFICATES =================-->
 
-<section class="certificates" id="certificates">
+    <section class="certificates" id="certificates">
 
-    <h2 class="section-title">Certificates</h2>
+        <h2 class="section-title">Certificates</h2>
 
-    <div class="certificate-container">
+        <div class="certificate-container">
 
-        <div class="certificate" onclick="openModal('images/Diploma.png')">
-            <img src="images/Diploma.png" alt="Cisco Cybersecurity">
-            <h3>Diploma</h3>
+            <div class="certificate" onclick="openModal('images/Diploma.png')">
+                <img src="images/Diploma.png" alt="Cisco Cybersecurity">
+                <h3>Bachelor's Degree Diploma</h3>
+            </div>
+
+            <div class="certificate" onclick="openModal('images/networking.png')">
+                <img src="images/networking.png" alt="Cisco Networking">
+                <h3>Cisco Networking Academy Certificate</h3>
+            </div>
+
+            <div class="certificate" onclick="openModal('images/Candelon_OJT Certification.png')">
+                <img src="images/Candelon_OJT Certification.png" alt="KaHero Internship">
+                <h3>KaHero Internship Completion Certificate</h3>
+            </div>
+
+            <div class="certificate" onclick="openModal('images/Binhi Certification.png')">
+                <img src="images/Binhi Certification.png" alt="KaHero Internship">
+                <h3>Thesis Certification</h3>
+            </div>
+
         </div>
 
-        <div class="certificate" onclick="openModal('images/networking.png')">
-            <img src="images/networking.png" alt="Cisco Networking">
-            <h3>Switching, Routing & Wireless Essentials</h3>
-        </div>
+    </section>  
 
-        <div class="certificate" onclick="openModal('images/Candelon_OJT Certification.png')">
-            <img src="images/Candelon_OJT Certification.png" alt="KaHero Internship">
-            <h3>KaHero Internship Completion</h3>
-        </div>
+    <!--================ CERTIFICATE MODAL =================-->
 
-        <div class="certificate" onclick="openModal('images/Binhi Certification.png')">
-            <img src="images/Binhi Certification.png" alt="KaHero Internship">
-            <h3>Thesis Certification</h3>
-        </div>
-
+    <div id="certificateModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content" alt="Certificate">
     </div>
 
-</section>
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById("certificateModal").style.display = "flex";
+            document.getElementById("modalImage").src = imageSrc;
+        }
 
-<!--================ CERTIFICATE MODAL =================-->
+        function closeModal() {
+            document.getElementById("certificateModal").style.display = "none";
+        }
 
-<div id="certificateModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modalImage" class="modal-content" alt="Certificate">
-</div>
+        window.onclick = function (event) {
+            const modal = document.getElementById("certificateModal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
 
-<script>
-function openModal(imageSrc) {
-    document.getElementById("certificateModal").style.display = "flex";
-    document.getElementById("modalImage").src = imageSrc;
-}
-
-function closeModal() {
-    document.getElementById("certificateModal").style.display = "none";
-}
-
-window.onclick = function(event) {
-    const modal = document.getElementById("certificateModal");
-    if (event.target === modal) {
-        closeModal();
-    }
-}
-
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        closeModal();
-    }
-});
-</script>
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
 
     <!--================ CONTACT =================-->
 
-<section class="contact" id="contact">
+    <section class="contact" id="contact">
 
-    <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Get In Touch</h2>
 
-    <div class="contact-container">
+        <div class="contact-container">
 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnrylcandelon02@gmail.com"
-   target="_blank"
-   class="contact-card">
-    <i class='bx bx-envelope'></i>
-    <div>
-        <h3>Email</h3>
-        <p>johnrylcandelon02@gmail.com</p>
-    </div>
-</a>
-
-
-        <a href="https://www.facebook.com/lyrnhoj.nolednac.9" target="_blank" class="contact-card">
-            <i class='bx bxl-facebook'></i>
-            <div>
-                <h3>Facebook</h3>
-                <p>facebook.com/John Ryl Candelon</p>
-            </div>
-        </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnrylcandelon02@gmail.com" target="_blank"
+                class="contact-card">
+                <i class='bx bx-envelope'></i>
+                <div>
+                    <h3>Email</h3>
+                    <p>johnrylcandelon02@gmail.com</p>
+                </div>
+            </a>
 
 
-        <a href="https://t.me/Johnryl22" target="_blank" class="contact-card">
-    <i class='bx bxl-telegram'></i>
-            <div>
-                <h3>LinkedIn</h3>
-                <p>linkedin.com/in/yourprofile</p>
-            </div>
-        </a>
+            <a href="https://www.facebook.com/lyrnhoj.nolednac.9" target="_blank" class="contact-card">
+                <i class='bx bxl-facebook'></i>
+                <div>
+                    <h3>Facebook</h3>
+                    <p>facebook.com/John Ryl Candelon</p>
+                </div>
+            </a>
 
 
-        <a href="https://api.whatsapp.com/send?phone=639932403603"
-   target="_blank"
-   class="contact-card">
-    <i class='bx bxl-whatsapp'></i>
-    <div>
-        <h3>WhatsApp</h3>
-        <p>+63 993 240 3603</p>
-    </div>
-</a>
+            <a href="https://t.me/Johnryl22" target="_blank" class="contact-card">
+                <i class='bx bxl-telegram'></i>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/yourprofile</p>
+                </div>
+            </a>
 
-    </div>
 
-</section>
+            <a href="https://api.whatsapp.com/send?phone=639932403603" target="_blank" class="contact-card">
+                <i class='bx bxl-whatsapp'></i>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <p>+63 993 240 3603</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
 
     <!--================ FOOTER =================-->
 
